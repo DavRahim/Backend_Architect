@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+venv/
+
+# Build outputs
+dist/
+build/
+*.exe
+
+# Environment variables and secrets
+.env
+*.pem
+
+# Logs and OS files
+*.log
+!critical.log
+.DS_Store
+Thumbs.db
