@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Classic",
+    "price": 350,
+    "publishedYear": 1925,
+    "inStock": true,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "category": "Fiction",
+    "price": 420,
+    "publishedYear": 1960,
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Dystopian",
+    "price": 300,
+    "publishedYear": 1949,
+    "inStock": false,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Adventure",
+    "price": 280,
+    "publishedYear": 1988,
+    "inStock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self-help",
+    "price": 550,
+    "publishedYear": 2018,
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "category": "Finance",
+    "price": 450,
+    "publishedYear": 1997,
+    "inStock": false,
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy",
+    "price": 480,
+    "publishedYear": 1937,
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "category": "Self-help",
+    "price": 320,
+    "publishedYear": 1937,
+    "inStock": true,
+    "rating": 4.3
+  },
+  {
+    "id": 9,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "category": "Fantasy",
+    "price": 650,
+    "publishedYear": 1997,
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "category": "Finance",
+    "price": 500,
+    "publishedYear": 2020,
+    "inStock": false,
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "price": 750,
+    "publishedYear": 2008,
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "category": "Programming",
+    "price": 600,
+    "publishedYear": 2015,
+    "inStock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "category": "Programming",
+    "price": 850,
+    "publishedYear": 1999,
+    "inStock": false,
+    "rating": 4.9
+  },
+  {
+    "id": 14,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "price": 400,
+    "publishedYear": 2016,
+    "inStock": true,
+    "rating": 4.5
+  },
+  {
+    "id": 15,
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "category": "Spirituality",
+    "price": 380,
+    "publishedYear": 1997,
+    "inStock": true,
+    "rating": 4.4
+  },
+  {
+    "id": 16,
+    "title": "Start with Why",
+    "author": "Simon Sinek",
+    "category": "Business",
+    "price": 520,
+    "publishedYear": 2009,
+    "inStock": false,
+    "rating": 4.6
+  },
+  {
+    "id": 17,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "category": "Business",
+    "price": 580,
+    "publishedYear": 2011,
+    "inStock": true,
+    "rating": 4.5
+  },
+  {
+    "id": 18,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "category": "History",
+    "price": 700,
+    "publishedYear": 2011,
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "category": "Self-help",
+    "price": 430,
+    "publishedYear": 2016,
+    "inStock": false,
+    "rating": 4.2
+  },
+  {
+    "id": 20,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "category": "Programming",
+    "price": 1200,
+    "publishedYear": 2009,
+    "inStock": true,
+    "rating": 4.9
+  }
+]
