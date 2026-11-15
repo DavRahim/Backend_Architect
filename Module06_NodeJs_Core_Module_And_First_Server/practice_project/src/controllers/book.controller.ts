@@ -43,6 +43,30 @@ const bookController = async (req: IncomingMessage, res: ServerResponse) => {
     books.push(newBook);
     createBook(books);
     sendResponse(res, true, 201, "Book Crate Successfully", newBook);
+  } else if (method === "PUT" && id !== null) {
+    const body = await bodyParser(req);
+    const books = booksService();
+
+    const index = books.findIndex((book: TBook) => book.id === id);
+
+    if (index < 0) {
+      sendResponse(res, false, 404, "This Book is not found");
+    }
+
+    books[index] = { id: books[index].id, ...body };
+    createBook(books);
+    sendResponse(res, true, 201, "Book Update Successfully", books[index]);
+  } else if (method === "DELETE" && id !== null) {
+    const books = booksService();
+
+    const index = books.findIndex((book: TBook) => book.id === id);
+
+    if (index < 0) {
+      sendResponse(res, false, 404, "Book not found");
+    }
+    books.splice(index, 1);
+    createBook(books);
+    sendResponse(res, false, 203, "Book Deleted Successfully");
   }
 };
 
