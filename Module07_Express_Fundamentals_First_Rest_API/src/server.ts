@@ -4,16 +4,14 @@ import express, {
   type Response,
 } from "express";
 import { Pool } from "pg";
+import config from "./config";
 const app: Application = express();
-const port = 3000;
-
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded());
 
 const pool = new Pool({
-  connectionString:
-    "postgresql://neondb_owner:npg_snIlMtZ2jwK7@ep-damp-darkness-az53i6yu.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=false&channel_binding=require",
+  connectionString: config.connection_string,
 });
 
 // console.log(pool);
@@ -183,11 +181,6 @@ app.delete("/api/v1/users/:id", async (req: Request, res: Response) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(config.port, () => {
+  console.log(`Example app listening on port ${config.port}`);
 });
-
-// # Postgres — your database connection
-
-// DATABASE_URL="postgresql://neondb_owner:npg_snIlMtZ2jwK7@ep-damp-darkness-az53i6yu.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-// DATABASE_URL_POOLED="postgresql://neondb_owner:npg_snIlMtZ2jwK7@ep-damp-darkness-az53i6yu-pooler.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
