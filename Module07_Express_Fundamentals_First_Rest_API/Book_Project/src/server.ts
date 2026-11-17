@@ -107,19 +107,37 @@ app.get("/api/v1/users/:id", async (req: Request, res: Response) => {
   }
 });
 
+// Update user
+
 app.put("/api/v1/users/:id", async (req: Request, res: Response) => {
   try {
-    const {} = await pool.query(
+    const { id } = req.params;
+    const { name, password, age, is_Active } = req.body;
+    const result = await pool.query(
       `UPDATE users
             SET
             name = COALESCE($1, name),
             password = COALESCE($2, password),
-            age = COALESCE($3, is_Active),
+            age = COALESCE($3, age),
+            is_Active = COALESCE($4, is_Active)
             update_at = NOW()
             WHERE id=$5 RETURNING *
             `,
-      [name ?? null],
+      [name ?? null, password ?? null, age ?? null, is_Active ?? null, id],
     );
+
+    if (result.rowCount === 0) {
+      res.status(400).json({
+        success: false,
+        message: "User Update UnSuccessfully",
+      });
+    }
+
+    res.status(201).json({
+      success: true,
+      message: "User Update successfully",
+      data: result.rows[0],
+    });
   } catch (error: any) {
     res.status(500).json({
       success: false,
