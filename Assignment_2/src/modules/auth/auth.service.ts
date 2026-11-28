@@ -46,8 +46,6 @@ const loginUserIntroDB = async (payload: {
 
   const jwtPayload = {
     id: user.rows[0].id,
-    name: user.rows[0].name,
-    email: user.rows[0].email,
     role: user.rows[0].role,
   };
   delete user.rows[0].password;

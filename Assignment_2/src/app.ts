@@ -4,6 +4,8 @@ import express, {
   type Response,
 } from "express";
 import { authRouter } from "./modules/auth/auth.route";
+import { eventRouter } from "./modules/event/event.route";
+import { bookingRouter } from "./modules/booking/booking.route";
 
 const app: Application = express();
 
@@ -19,5 +21,7 @@ app.get("/", (req: Request, res: Response) => {
 
 // Auth Route
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/events", eventRouter);
+app.use("/api/v1/bookings", bookingRouter);
 
 export default app;
