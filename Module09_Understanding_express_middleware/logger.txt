@@ -144,3 +144,9 @@ Method : POST | URL: /api/v1/auth/login | Time: 1795105590741
 Method : POST | URL: /api/v1/auth/refresh-token | Time: 1795105601527
 
 Method : POST | URL: /api/v1/auth/login | Time: 1795106205500
+
+Method : GET | URL: / | Time: 1795616570516
+
+Method : GET | URL: /test | Time: 1795616587612
+
+Method : GET | URL: /favicon.ico | Time: 1795616587696

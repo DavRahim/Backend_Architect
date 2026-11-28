@@ -1,4 +1,3 @@
-import fs from "fs";
 import express, { type Application } from "express";
 import { UserRoute } from "./modules/users/user.route";
 import { profileRoute } from "./modules/profile/profile.route";
