@@ -30,7 +30,7 @@ const loginUserIntroDB = async (payload: {
     throw new Error("Invalid Credential");
   }
   if (!user.rows[0].is_active) {
-    throw new Error("Access deynied ,Account hassen add");
+    throw new Error("Access dyenied ,Account hassen add");
   }
 
   const jwtPayload = {
@@ -42,6 +42,7 @@ const loginUserIntroDB = async (payload: {
   const accessToke = jwt.sign(jwtPayload, config.jwt_scect, {
     expiresIn: "1d",
   });
+
   delete user.rows[0].password;
   return { accessToke, user: user.rows[0] };
 };
